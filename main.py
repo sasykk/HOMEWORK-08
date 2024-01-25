@@ -1,12 +1,7 @@
 from datetime import datetime, date, timedelta
 
 def get_birthdays_day_week(users):
-    result = {"Monday": [],
-              "Tuesday": [],
-              "Wednesday": [],
-              "Thursday": [],
-              "Friday": []
-              }
+    result = {"Monday": [], "Tuesday": [], "Wednesday": [], "Thursday": [], "Friday": []}
     today = date.today()
     yesterday = today - timedelta(days=1)
     before_yesterday = today - timedelta(days=2)
